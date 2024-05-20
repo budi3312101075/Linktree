@@ -16,7 +16,7 @@ const Update = (props) => {
     const name = e.target.name.value;
     const link = e.target.link.value;
     try {
-      axios.put(`http://localhost:8800/List/${dataUpdate.id}`, {
+      axios.put(`${import.meta.env.VITE_API_URL}/List/${dataUpdate.id}`, {
         name: name,
         link: link,
       });

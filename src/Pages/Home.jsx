@@ -18,7 +18,7 @@ const Home = () => {
 
   const read = async () => {
     try {
-      const res = await axios.get("http://localhost:8800/List");
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/List`);
       setList(res.data);
     } catch (err) {
       console.log(err);
@@ -27,11 +27,11 @@ const Home = () => {
 
   useEffect(() => {
     read();
-  }, []);
+  }, [openModal]);
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete("http://localhost:8800/List/" + id);
+      await axios.delete(`${import.meta.env.VITE_API_URL}/List/` + id);
       read();
     } catch (err) {
       console.log(err);

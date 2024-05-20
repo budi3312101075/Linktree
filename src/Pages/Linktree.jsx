@@ -8,7 +8,7 @@ const Linktree = () => {
   useEffect(() => {
     const fecthAllList = async () => {
       try {
-        const res = await axios.get("http://localhost:8800/List");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/List`);
         setList(res.data);
       } catch (err) {
         console.log(err);
@@ -19,7 +19,7 @@ const Linktree = () => {
 
   return (
     <>
-      <div className="bg-white min-h-screen flex flex-col">
+      <div className="bg-white min-h-screen flex flex-col ">
         <img
           src="./src/assets/Naruto.png"
           alt="Logo"
@@ -29,8 +29,11 @@ const Linktree = () => {
           Wellcome My LinkTree
         </h1>
         <p className="mt-3 mx-auto italic text-black">
-          Hadirku Sempurnakan Mamakmu✨
+          Hadirku Sempurnakan harimu✨
         </p>
+        <Link className="mx-auto" to="/home">
+          Masuk ke admin
+        </Link>
         <div className="mx-auto mt-5 flex flex-col">
           {list.map((list, no) => (
             <div className="list" key={list.id}>

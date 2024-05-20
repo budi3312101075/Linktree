@@ -14,7 +14,7 @@ const Modal = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/List", {
+      await axios.post(`${import.meta.env.VITE_API_URL}/List`, {
         name: e.target.name.value,
         link: e.target.link.value,
       });
