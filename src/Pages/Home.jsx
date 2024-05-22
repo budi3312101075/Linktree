@@ -43,7 +43,7 @@ const Home = () => {
       <div className="min-h-screen flex flex-col gap-5 bg-white">
         <div className="mx-auto mt-20 gap-5 flex flex-col">
           <img
-            src="./src/assets/Naruto.png"
+            src="./Naruto.png"
             alt="Logo"
             className="h-16 w-32 mx-auto lg:mt-10"
           />
