@@ -21,7 +21,7 @@ const Linktree = () => {
     <>
       <div className="bg-white min-h-screen flex flex-col ">
         <img
-          src="./src/assets/Naruto.png"
+          src="./Naruto.png"
           alt="Logo"
           className="h-20 w-32 mx-auto mt-20"
         />
@@ -47,17 +47,17 @@ const Linktree = () => {
           <div className="flex gap-4 justify-center mt-5 mb-10">
             <div>
               <Link to="https://daisyui.com/components/button/" target="_blank">
-                <img src="./src/assets/instagram.gif" alt="" className="h-9" />
+                <img src="./instagram.gif" alt="" className="h-9" />
               </Link>
             </div>
             <div>
               <Link to="https://daisyui.com/components/button/" target="_blank">
-                <img src="./src/assets/WhatsApp.gif" alt="" className="h-9" />
+                <img src="./WhatsApp.gif" alt="" className="h-9" />
               </Link>
             </div>
             <div>
               <a href="mailto:budiprayoga5103@gmail.com" target="_blank">
-                <img src="./src/assets/Email.gif" alt="" className="h-9" />
+                <img src="./Email.gif" alt="" className="h-9" />
               </a>
             </div>
           </div>
